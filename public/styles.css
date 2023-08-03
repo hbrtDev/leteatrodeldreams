@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+main,
+.intro-container,
+.presentation-container,
+.article,
+.act,
+.act-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100%;
+	flex-direction: column;
+}
+
+main {
+	background-image: url("https://wallpapers.com/images/hd/movie-theater-background-4152-x-2768-0qzsued4ujd981ej.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.intro-container,
+.act-content {
+	background-color: rgba(17, 17, 17, 0.7);
+	color: #fff;
+	text-align: center;
+}
+
+.art-content{
+    padding: 0 25%;
+}
+
+.presentation-container,
+.article {
+	background-color: #000;
+	color: #fff;
+}
+
+.presentation-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+	width: 100%;
+	text-align: center;
+}
+
+.pecas {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	flex: 1;
+}
+
+.peca {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	transition: 0.4s all;
+	text-align: justify;
+	width: 50%;
+}
+
+p {
+	margin: 10px 0;
+}
+
+.peca:hover {
+	background-color: #111;
+}
+
+div.act.act-um {
+	background-image: url("https://png.pngtree.com/background/20230325/original/pngtree-opera-stage-vintage-illustration-background-picture-image_2166728.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: 32px;
+}
+
+div.act.act-dois {
+	background-image: url("https://theartofcostume.com/wp-content/uploads/2020/11/uwvkeo9pwhu9algzsilpi6sru64.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: 28px;
+}
+
+div.act.final-act {
+	background-image: url("https://usagif.com/wp-content/uploads/applause-8.gif");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: 28px;
+}
+
+.article {
+	text-align: center;
+}
+
+.intro-btt,
+.restartBtt {
+	height: 50px;
+	width: 200px;
+	margin-top: 10px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	box-shadow: 1px 1px 1px #333;
+	transition: 0.4s all ease;
+	cursor: pointer;
+	color: #fff;
+}
+
+.intro-btt:hover,
+.restartBtt:hover {
+	transform: translateY(-2px);
+	color: #fff;
+	background-color: #111;
+	border: #000;
+}
+
+.intro-btt:active,
+.restartBtt:active {
+	transform: translateY(4px);
+	color: #fff;
+	background-color: #222;
+	border: #333;
+}
+
+footer {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	width: 100%;
+	height: 100px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+}
+
+.heart-footer > img {
+	height: 32px;
+	width: 32px;
+}
+
+.fade-in {
+	opacity: 0; /* Começa com opacidade 0 para estar invisível */
+	transform: translateY(20px); /* Move o elemento 20px para baixo */
+	transition: opacity 0.8s ease, transform 0.8s ease; /* Adiciona uma transição suave */
+}
+.fade-in.show {
+	opacity: 1; /* Aumenta a opacidade para 1 para tornar o elemento visível */
+	transform: translateY(
+		0
+	); /* Move o elemento de volta para a posição original */
+}
+
+.referencia{
+    font-weight: 200;
+}
+
+.referencia a{
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+	.pecas {
+		flex-direction: column;
+	}
+
+	.peca {
+		width: 100%;
+	}
+
+	div.act.act-um {
+		font-size: 24px;
+	}
+
+	div.act.act-dois {
+		font-size: 20px;
+	}
+
+    .art-content{
+        padding: 0 20px;
+    }
+
+    .art-title{
+        margin: 10px 0;
+    }
+}
